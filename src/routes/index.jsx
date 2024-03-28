@@ -1,22 +1,21 @@
-import { Route, Routes, useLocation } from "react-router-dom"
-import { AnimatePresence } from "framer-motion"
-import AppLayout from "../layouts/AppLayout"
-import Dashboard from "./Dashboard"
-import PoS from "./PoS"
+import { Route, Routes, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import AppLayout from "../layouts/AppLayout";
+import { Dashboard, PoS } from "../pages";
 
 function AppRoutes() {
-    const location = useLocation();
+  const location = useLocation();
 
-    return (
-        <AnimatePresence mode="wait">
-            <Routes key={location.pathname} location={location}>
-                <Route path="/" element={<AppLayout />}>
-                    <Route index element={<Dashboard />} />
-                    <Route path="sells" element={<PoS />} />
-                </Route>
-            </Routes>
-        </AnimatePresence>
-    )
+  return (
+    <AnimatePresence mode="wait">
+      <Routes key={location.pathname} location={location}>
+        <Route path="/" element={<AppLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="sells" element={<PoS />} />
+        </Route>
+      </Routes>
+    </AnimatePresence>
+  );
 }
 
-export default AppRoutes
+export default AppRoutes;

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { AnimatedPage } from "../components"
+import { AnimatedPage } from "../../components"
 
 function Dashboard() {
   const { t } = useTranslation()

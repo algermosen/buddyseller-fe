@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AnimatedPage, BackButton } from "../components";
+import { AnimatedPage, BackButton } from "../../components";
 import { useTranslation } from "react-i18next";
 import { Tabs, Tab, Button } from "@nextui-org/react";
 import { motion as m } from "framer-motion";
