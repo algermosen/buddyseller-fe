@@ -1,0 +1,218 @@
+{
+    "products": [
+        {
+            "Name": "Hair Dryer",
+            "Description": "Powerful hair drying tool",
+            "Sku": "HAI12345",
+            "Price": 99.99,
+            "Stock": 50
+        },
+        {
+            "Name": "Facial Cream",
+            "Description": "Moisturizing cream for face",
+            "Sku": "FAC67890",
+            "Price": 75.00,
+            "Stock": 100
+        },
+        {
+            "Name": "Mani-Pedi Kit",
+            "Description": "Complete nail care set",
+            "Sku": "MAN54321",
+            "Price": 129.99,
+            "Stock": 75
+        },
+        {
+            "Name": "Shampoo",
+            "Description": "Gentle cleansing shampoo",
+            "Sku": "SHA24680",
+            "Price": 55.00,
+            "Stock": 120
+        },
+        {
+            "Name": "Lipstick",
+            "Description": "Long-lasting lipstick",
+            "Sku": "LIP13579",
+            "Price": 19.99,
+            "Stock": 200
+        },
+        {
+            "Name": "Eyelash Curler",
+            "Description": "Curl lashes effortlessly",
+            "Sku": "EYE98765",
+            "Price": 29.99,
+            "Stock": 80
+        },
+        {
+            "Name": "Blush",
+            "Description": "Natural blush for cheeks",
+            "Sku": "BLU54321",
+            "Price": 39.99,
+            "Stock": 60
+        },
+        {
+            "Name": "Hair Straightener",
+            "Description": "Get sleek straight hair",
+            "Sku": "STR45678",
+            "Price": 89.99,
+            "Stock": 90
+        },
+        {
+            "Name": "Sunscreen",
+            "Description": "Protects from harmful UV rays",
+            "Sku": "SUN23456",
+            "Price": 24.99,
+            "Stock": 150
+        },
+        {
+            "Name": "Mascara",
+            "Description": "Lengthening mascara",
+            "Sku": "MAS78901",
+            "Price": 15.00,
+            "Stock": 180
+        },
+        {
+            "Name": "Nail Polish",
+            "Description": "Vibrant nail color",
+            "Sku": "NAP67890",
+            "Price": 9.99,
+            "Stock": 250
+        },
+        {
+            "Name": "Hair Gel",
+            "Description": "Strong hold hair styling gel",
+            "Sku": "GEL54321",
+            "Price": 7.99,
+            "Stock": 100
+        },
+        {
+            "Name": "Cleansing Wipes",
+            "Description": "Quick makeup removal wipes",
+            "Sku": "CLE90123",
+            "Price": 4.99,
+            "Stock": 120
+        },
+        {
+            "Name": "Styling Chair",
+            "Description": "Comfortable chair for salon",
+            "Sku": "CHA12345",
+            "Price": 299.99,
+            "Stock": 50
+        },
+        {
+            "Name": "Pro Hair Dryer",
+            "Description": "Professional hair dryer",
+            "Sku": "DRY67890",
+            "Price": 249.99,
+            "Stock": 30
+        },
+        {
+            "Name": "Mani-Pedi Pro Kit",
+            "Description": "Complete nail care set",
+            "Sku": "NCK23456",
+            "Price": 199.99,
+            "Stock": 20
+        },
+        {
+            "Name": "Barber Chair Pro",
+            "Description": "Classic barber chair",
+            "Sku": "BAR78901",
+            "Price": 499.99,
+            "Stock": 15
+        },
+        {
+            "Name": "Curling Iron",
+            "Description": "Ceramic curling wand",
+            "Sku": "CRL34567",
+            "Price": 79.99,
+            "Stock": 40
+        },
+        {
+            "Name": "Shampoo Bowl",
+            "Description": "Portable hair washing sink",
+            "Sku": "SHW89012",
+            "Price": 199.99,
+            "Stock": 10
+        },
+        {
+            "Name": "Hair Clippers",
+            "Description": "Professional hair cutting tool",
+            "Sku": "CLP45678",
+            "Price": 129.99,
+            "Stock": 25
+        },
+        {
+            "Name": "Salon Trolley",
+            "Description": "Rolling storage cart",
+            "Sku": "TRL90123",
+            "Price": 69.99,
+            "Stock": 35
+        },
+        {
+            "Name": "Facial Steamer",
+            "Description": "Skin rejuvenation device",
+            "Sku": "STM56789",
+            "Price": 119.99,
+            "Stock": 18
+        },
+        {
+            "Name": "UV Nail Lamp",
+            "Description": "Gel nail curing light",
+            "Sku": "LMP23456",
+            "Price": 59.99,
+            "Stock": 28
+        },
+        {
+            "Name": "Salon Cape",
+            "Description": "Waterproof hair cutting cape",
+            "Sku": "CPE78901",
+            "Price": 29.99,
+            "Stock": 60
+        },
+        {
+            "Name": "Hair Straightener Pro",
+            "Description": "Ionic flat iron",
+            "Sku": "STR34567",
+            "Price": 189.99,
+            "Stock": 22
+        },
+        {
+            "Name": "Pedicure Bowl",
+            "Description": "Foot soaking tub",
+            "Sku": "PDL89012",
+            "Price": 49.99,
+            "Stock": 45
+        }
+    ],
+    "users": [
+        {
+            "Name": "John Doe",
+            "Employee Code": "EMP001",
+            "Email": "j.doe@buddyseller.com",
+            "Password": "A1b2C3d4E5"
+        },
+        {
+            "Name": "Jane Smith",
+            "Employee Code": "EMP002",
+            "Email": "j.smith@buddyseller.com",
+            "Password": "F6g7H8i9J0"
+        },
+        {
+            "Name": "Michael Johnson",
+            "Employee Code": "EMP003",
+            "Email": "m.johnson@buddyseller.com",
+            "Password": "K1l2M3n4O5"
+        },
+        {
+            "Name": "Emily Brown",
+            "Employee Code": "EMP004",
+            "Email": "e.brown@buddyseller.com",
+            "Password": "P6q7R8s9T0"
+        },
+        {
+            "Name": "David Lee",
+            "Employee Code": "EMP005",
+            "Email": "d.lee@buddyseller.com",
+            "Password": "U1v2W3x4Y5"
+        }
+    ]
+}

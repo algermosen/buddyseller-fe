@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AnimatedPage, BackButton } from "../components";
 import { useTranslation } from "react-i18next";
 import { Tabs, Tab, Button } from "@nextui-org/react";
+import { motion as m } from "framer-motion";
 // import { Icon } from "@iconify/react";
 
 const tabKeys = {
@@ -9,6 +10,17 @@ const tabKeys = {
   CUSTOMER: "costumer",
   CONFIRMATION: "confirmation",
 };
+
+const animations = {
+  initial: { opacity: 0, x: 10 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -10 },
+};
+
+const transition = {
+  duration: 0.45,
+  ease: "easeOut",
+}
 
 function PoS() {
   const { t } = useTranslation();
@@ -26,7 +38,7 @@ function PoS() {
   return (
     <AnimatedPage>
       <div className="bg-white rounded p-5">
-        <h3 className="text-3xl">{t("pos:title")}</h3>
+        <h3 className="text-3xl pb-3">{t("pos:title")}</h3>
         <Tabs
           aria-label="Options"
           size="lg"
@@ -36,70 +48,91 @@ function PoS() {
           disabledKeys={disabledTabs}
         >
           <Tab key={tabKeys.PRODUCTS} title={t("pos:tab.product")}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <Button
-              color="secondary"
-              variant="ghost"
-              onClick={() => {
-                setDisabledTabs(
-                  disabledTabs.filter((item) => item !== tabKeys.CUSTOMER)
-                );
-                setSelected(tabKeys.CUSTOMER);
-              }}
+            <m.div
+              variants={animations}
+              initial="initial"
+              animate="animate"
+              transition={transition}
             >
-              {t("actions:next")}
-            </Button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <Button
+                color="secondary"
+                variant="ghost"
+                onClick={() => {
+                  setDisabledTabs(
+                    disabledTabs.filter((item) => item !== tabKeys.CUSTOMER)
+                  );
+                  setSelected(tabKeys.CUSTOMER);
+                }}
+              >
+                {t("actions:next")}
+              </Button>
+            </m.div>
           </Tab>
           <Tab key={tabKeys.CUSTOMER} title={t("pos:tab.customer")}>
-            <BackButton
-              onClick={() => {
-                setSelected(tabKeys.PRODUCTS);
-              }}
-            />
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-            <Button
-              color="secondary"
-              variant="ghost"
-              onClick={() => {
-                setDisabledTabs(
-                  disabledTabs.filter((item) => item !== tabKeys.CONFIRMATION)
-                );
-                setSelected(tabKeys.CONFIRMATION);
-              }}
+            <m.div
+              variants={animations}
+              initial="initial"
+              animate="animate"
+              transition={transition}
             >
-              {t("actions:next")}
-            </Button>
+              <BackButton
+                onClick={() => {
+                  setSelected(tabKeys.PRODUCTS);
+                }}
+              />
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
+              </p>
+              <Button
+                color="secondary"
+                variant="ghost"
+                onClick={() => {
+                  setDisabledTabs(
+                    disabledTabs.filter((item) => item !== tabKeys.CONFIRMATION)
+                  );
+                  setSelected(tabKeys.CONFIRMATION);
+                }}
+              >
+                {t("actions:next")}
+              </Button>
+            </m.div>
           </Tab>
           <Tab key={tabKeys.CONFIRMATION} title={t("pos:tab.confirmation")}>
-            <BackButton
-              onClick={() => {
-                setSelected(tabKeys.CUSTOMER);
-              }}
-            />
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-            <Button
-              color="primary"
-              variant="ghost"
-              onClick={() => {
-                resetDisabledTabs();
-                setSelected(tabKeys.PRODUCTS);
-              }}
+            <m.div
+              variants={animations}
+              initial="initial"
+              animate="animate"
+              transition={transition}
             >
-              {t("actions:confirm")}
-            </Button>
+              <BackButton
+                onClick={() => {
+                  setSelected(tabKeys.CUSTOMER);
+                }}
+              />
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </p>
+              <Button
+                color="primary"
+                variant="ghost"
+                onClick={() => {
+                  resetDisabledTabs();
+                  setSelected(tabKeys.PRODUCTS);
+                }}
+              >
+                {t("actions:confirm")}
+              </Button>
+            </m.div>
           </Tab>
         </Tabs>
       </div>
