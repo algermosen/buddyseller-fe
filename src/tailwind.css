@@ -1263,6 +1263,10 @@ video {
   min-width: var(--nextui-spacing-unit-8);
 }
 
+.min-w-0 {
+  min-width: 0px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -2398,6 +2402,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-unit-2 {
+  padding-left: var(--nextui-spacing-unit-2);
+  padding-right: var(--nextui-spacing-unit-2);
 }
 
 .\!pb-0 {

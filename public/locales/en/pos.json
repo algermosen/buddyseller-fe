@@ -1,3 +1,8 @@
 {
-    "title": "Point of Sales"
+    "title": "Point of Sales",
+    "tab": {
+        "product": "Choose Products",
+        "customer": "Customer Information",
+        "confirmation": "Confirm Order"
+    }
 }

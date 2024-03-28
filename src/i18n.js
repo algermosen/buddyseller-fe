@@ -18,7 +18,7 @@ i18n
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
-    ns: ['dashboard', 'pos', 'menu']
+    ns: ['dashboard', 'pos', 'menu', 'actions']
     // resources: {
     //   en: {
     //     translation: {

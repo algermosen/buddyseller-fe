@@ -1,0 +1,8 @@
+{
+    "title": "Punto de Ventas",
+    "tab": {
+        "product": "Elegir Productos",
+        "customer": "Información del Cliente",
+        "confirmation": "Confirmar Orden"
+    }
+}
