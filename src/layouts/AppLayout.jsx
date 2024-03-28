@@ -15,7 +15,8 @@ function AppLayout() {
     const location = useLocation();
 
     return (
-        <main className="grid grid-cols-12 grid-rows-applayout">
+        <main
+            className="grid grid-cols-12 grid-rows-applayout">
             <Navbar isBordered
                 position="static"
                 classNames={{
@@ -32,7 +33,7 @@ function AppLayout() {
                 <NavbarContent>
                     {SIDENAV_ITEMS.map(navItem => {
                         const isActive = matchPath(navItem.path, location.pathname)
-                        const itemColor = isActive ? "primery" : "foreground";
+                        const itemColor = isActive ? "" : "foreground";
                         return (
                             <NavbarItem className="hover:border-r-8 border-primary rounded-sm transition-all hover:bg-slate-100" key={navItem.localeKey} isActive={matchPath(navItem.path, location.pathname)}>
                                 <Link className="block" color={itemColor} to={navItem.path}>
