@@ -3,6 +3,7 @@ import { AnimatedPage, BackButton } from "../../components";
 import { useTranslation } from "react-i18next";
 import { Tabs, Tab, Button } from "@nextui-org/react";
 import { motion as m } from "framer-motion";
+import ProductForm from "./components/ProductForm";
 // import { Icon } from "@iconify/react";
 
 const tabKeys = {
@@ -54,12 +55,7 @@ function PoS() {
               animate="animate"
               transition={transition}
             >
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+              <ProductForm />
               <Button
                 color="secondary"
                 variant="ghost"
